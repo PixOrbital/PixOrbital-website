@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PixOrbital — Data Science, Machine Learning &amp; AI Solutions</title>
+  <meta name="description" content="PixOrbital designs and engineers data science, machine learning, and AI systems — from forecasting and anomaly detection to knowledge systems and intelligent automation." />
+
+  <!-- Canonical URL — REPLACE with your actual purchased domain before deploying -->
+  <link rel="canonical" href="https://www.pixorbital.in/" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="PixOrbital" />
+  <meta property="og:title" content="PixOrbital — Data Science, Machine Learning & AI Solutions" />
+  <meta property="og:description" content="PixOrbital designs and engineers data science, machine learning, and AI systems — from forecasting and anomaly detection to knowledge systems and intelligent automation." />
+  <meta property="og:url" content="https://www.pixorbital.in/" />
+  <meta property="og:image" content="https://www.pixorbital.in/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PixOrbital — Data Science, Machine Learning & AI Solutions" />
+  <meta name="twitter:description" content="PixOrbital designs and engineers data science, machine learning, and AI systems — from forecasting and anomaly detection to knowledge systems and intelligent automation." />
+  <meta name="twitter:image" content="https://www.pixorbital.in/images/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <meta name="theme-color" content="#5C0000" />
+
+  <!-- Fonts: IM Fell English (display/body/UI), JetBrains Mono (technical/data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ============================== HEADER ============================== -->
+  <header class="site-header">
+    <div class="container site-header__row">
+      <a href="#home" class="brand" aria-label="PixOrbital home">
+        <img src="images/logo.svg" alt="" width="32" height="32" />
+        PixOrbital
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link is-active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#technology" class="nav-link">Technology</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#insights" class="nav-link">Insights</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary nav-cta">Start a project</a>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div class="mobile-menu" id="mobile-menu" data-state="closed">
+      <nav aria-label="Mobile">
+        <ul>
+          <li><a href="#home" class="mobile-nav-link">Home</a></li>
+          <li><a href="#about" class="mobile-nav-link">About</a></li>
+          <li><a href="#services" class="mobile-nav-link">Services</a></li>
+          <li><a href="#solutions" class="mobile-nav-link">Solutions</a></li>
+          <li><a href="#technology" class="mobile-nav-link">Technology</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+          <li><a href="#insights" class="mobile-nav-link">Insights</a></li>
+          <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary mobile-nav-cta">Start a project</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <!-- ============================== HERO ============================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Data Science &middot; Machine Learning &middot; AI</p>
+          <h1>Intelligent systems, engineered from data.</h1>
+          <p class="hero-lead">
+            PixOrbital designs and builds machine learning, AI, and data engineering
+            systems that turn raw operational data into forecasts, automation, and
+            decisions your business can act on.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Start a project</a>
+            <a href="#services" class="btn btn-secondary">Explore services</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <svg class="hero-engine" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+            <defs>
+              <radialGradient id="brassGradHero" cx="35%" cy="30%" r="75%">
+                <stop offset="0%" stop-color="#D9C87A"/>
+                <stop offset="55%" stop-color="#B5A642"/>
+                <stop offset="100%" stop-color="#8A7C2E"/>
+              </radialGradient>
+            </defs>
+
+            <!-- outer engraved panel -->
+            <circle cx="220" cy="220" r="208" fill="var(--color-surface)" stroke="var(--color-copper)" stroke-width="3"/>
+            <circle cx="220" cy="220" r="194" fill="none" stroke="var(--color-border)" stroke-width="1" stroke-dasharray="2 7"/>
+
+            <!-- corner bolts -->
+            <circle cx="220" cy="24" r="6" fill="var(--color-copper)" stroke="var(--color-mahogany)" stroke-width="1.2"/>
+            <circle cx="416" cy="220" r="6" fill="var(--color-copper)" stroke="var(--color-mahogany)" stroke-width="1.2"/>
+            <circle cx="220" cy="416" r="6" fill="var(--color-copper)" stroke="var(--color-mahogany)" stroke-width="1.2"/>
+            <circle cx="24" cy="220" r="6" fill="var(--color-copper)" stroke="var(--color-mahogany)" stroke-width="1.2"/>
+
+            <!-- orbit path -->
+            <ellipse cx="220" cy="220" rx="168" ry="92" transform="rotate(-18 220 220)" fill="none" stroke="var(--color-teal)" stroke-width="1.2" stroke-dasharray="4 7" opacity="0.55"/>
+            <circle class="orbit-dot" cx="368" cy="176" r="4" fill="var(--color-teal)"/>
+            <circle class="orbit-dot orbit-dot--delay1" cx="220" cy="128" r="4" fill="var(--color-teal)"/>
+            <circle class="orbit-dot orbit-dot--delay2" cx="88" cy="240" r="4" fill="var(--color-teal)"/>
+
+            <!-- gear: ingest -->
+            <g class="gear gear-a">
+              <circle cx="172" cy="212" r="62" fill="none" stroke="url(#brassGradHero)" stroke-width="16" stroke-dasharray="15 12"/>
+              <circle cx="172" cy="212" r="44" fill="var(--color-brass)" opacity="0.12"/>
+              <circle cx="172" cy="212" r="19" fill="var(--color-parchment)" stroke="var(--color-mahogany)" stroke-width="1.5"/>
+              <circle cx="172" cy="212" r="5.5" fill="var(--color-mahogany)"/>
+            </g>
+
+            <!-- gear: model -->
+            <g class="gear gear-b">
+              <circle cx="292" cy="150" r="40" fill="none" stroke="url(#brassGradHero)" stroke-width="12" stroke-dasharray="10 8"/>
+              <circle cx="292" cy="150" r="27" fill="var(--color-brass)" opacity="0.12"/>
+              <circle cx="292" cy="150" r="13" fill="var(--color-parchment)" stroke="var(--color-mahogany)" stroke-width="1.3"/>
+              <circle cx="292" cy="150" r="4" fill="var(--color-mahogany)"/>
+            </g>
+
+            <!-- gear: predict -->
+            <g class="gear gear-c">
+              <circle cx="248" cy="304" r="30" fill="none" stroke="url(#brassGradHero)" stroke-width="9" stroke-dasharray="7 6"/>
+              <circle cx="248" cy="304" r="20" fill="var(--color-brass)" opacity="0.12"/>
+              <circle cx="248" cy="304" r="9.5" fill="var(--color-parchment)" stroke="var(--color-mahogany)" stroke-width="1.2"/>
+              <circle cx="248" cy="304" r="3" fill="var(--color-mahogany)"/>
+            </g>
+          </svg>
+
+          <p class="hero-plate mono">Ingest &rarr; Model &rarr; Predict</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== ABOUT ============================== -->
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-copy">
+          <p class="eyebrow">About PixOrbital</p>
+          <h2>Data science and AI, built to hold up in production.</h2>
+          <p class="about-lead">
+            PixOrbital designs, builds, and deploys machine learning and AI systems
+            for organizations that need more than a proof of concept. We work across
+            the full lifecycle — from messy source data to models that run reliably
+            in production — with an approach grounded in statistical rigor and
+            software engineering discipline.
+          </p>
+          <p>
+            Our mission is straightforward: turn data into decisions. Every project
+            starts with the business question, not the algorithm, and ends with
+            something a team can actually run, monitor, and trust.
+          </p>
+        </div>
+
+        <aside class="about-plate" aria-label="PixOrbital's guiding principle">
+          <span class="about-plate__eyebrow mono">Nameplate</span>
+          <p class="about-plate__quote">"We build systems, not slides."</p>
+          <span class="about-plate__sub mono">— PixOrbital engineering approach</span>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================== WHY PIXORBITAL ============================== -->
+    <section id="why" class="why">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Why PixOrbital</p>
+          <h2>Built for teams who need results, not just models</h2>
+        </div>
+
+        <div class="why-grid">
+          <article class="why-card why-card--feature">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="9" r="5.25" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="9" cy="9" r="1.6" fill="currentColor"/>
+                <path d="M9 2.2v1.6M9 14.2v1.6M2.2 9h1.6M14.2 9h1.6M4.6 4.6l1.1 1.1M12.3 12.3l1.1 1.1M13.4 4.6l-1.1 1.1M5.7 12.3l-1.1 1.1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <circle cx="18" cy="17" r="3.2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M14.3 12.2l-2-1.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Technical depth</h3>
+            <p>
+              Our team works across classical statistics, modern machine learning,
+              and applied AI, choosing the simplest method that actually solves the
+              problem rather than the most fashionable one.
+            </p>
+          </article>
+
+          <article class="why-card why-card--wide">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20V10M11 20V4M18 20v-7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M2.5 20h19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Data-first thinking</h3>
+            <p>We spend real time on data quality, labeling, and validation before a single model gets trained.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="14.5" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="4" y="9" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
+                <rect x="4" y="3.5" width="16" height="4" rx="1" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </span>
+            <h3>Scalable engineering</h3>
+            <p>Models are built with the discipline of production software: version control, testing, and reproducible pipelines.</p>
+          </article>
+
+          <article class="why-card">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="12" cy="12" r="1.4" fill="currentColor"/>
+              </svg>
+            </span>
+            <h3>Measurable outcomes</h3>
+            <p>We define success in business terms up front — forecast accuracy, cost saved, hours automated — and report against it.</p>
+          </article>
+
+          <article class="why-card why-card--full">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="9" r="3.4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="17" cy="15" r="3.4" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M10.6 10.9l3.8 3.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Flexible collaboration</h3>
+            <p>We plug into your existing team and tools, working as an embedded partner or a self-contained delivery team, depending on what you need.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SERVICES ============================== -->
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Services</p>
+          <h2>Five disciplines, one delivery team</h2>
+          <p>From first exploration of a dataset to a model running in production, each service below can stand alone or combine into a full pipeline.</p>
+        </div>
+
+        <div class="service-list">
+
+          <article class="service-row" id="svc-data-science">
+            <div class="service-visual">
+              <span class="service-dial" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 20V11M10 20V6M16 20v-9M20 20V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  <circle cx="4" cy="11" r="1.4" fill="currentColor"/>
+                  <circle cx="10" cy="6" r="1.4" fill="currentColor"/>
+                  <circle cx="16" cy="11" r="1.4" fill="currentColor"/>
+                  <circle cx="20" cy="4" r="1.4" fill="currentColor"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-content">
+              <h3>Data Science &amp; Analytics</h3>
+              <p>Turning raw operational data into clear, decision-ready analysis.</p>
+              <ul class="capability-tags">
+                <li>Exploratory analysis</li>
+                <li>Statistical modeling</li>
+                <li>Dashboarding &amp; reporting</li>
+              </ul>
+              <a class="service-link" href="#contact">Talk to us about this <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" id="svc-machine-learning">
+            <div class="service-visual">
+              <span class="service-dial" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="6" cy="6" r="2.1" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="18" cy="6" r="2.1" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="13" r="2.1" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="6" cy="20" r="2.1" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="18" cy="20" r="2.1" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M7.7 7.4L10.5 11.6M16.3 7.4L13.5 11.6M10.7 14.6L7.6 18.2M13.3 14.6L16.4 18.2" stroke="currentColor" stroke-width="1.3"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-content">
+              <h3>Machine Learning</h3>
+              <p>Custom models trained on your data to classify, predict, and recommend.</p>
+              <ul class="capability-tags">
+                <li>Supervised &amp; unsupervised learning</li>
+                <li>Feature engineering</li>
+                <li>Model evaluation</li>
+              </ul>
+              <a class="service-link" href="#contact">Talk to us about this <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-row" id="svc-predictive-analytics">
+            <div class="service-visual">
+              <span class="service-dial" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3.5 16.5L9 11l3.5 3 4-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.5 9h4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3.5 20h17" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-dasharray="0.5 3.5"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-content">
+              <h3>Predictive Analytics</h3>
+              <p>Forecasting demand, risk, and performance before it happens.</p>
+              <ul class="capability-tags">
+                <li>Time-series forecasting</li>
+                <li>Risk scoring</li>
+                <li>Scenario modeling</li>
+              </ul>
+              <a class="service-link" href="#contact">Talk to us about this <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-row service-row--reverse" id="svc-ai-solutions">
+            <div class="service-visual">
+              <span class="service-dial" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="7" y="7" width="10" height="10" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="12" cy="12" r="2.1" stroke="currentColor" stroke-width="1.4"/>
+                  <path d="M12 3.2v2.4M12 18.4v2.4M3.2 12h2.4M18.4 12h2.4M5.6 5.6l1.7 1.7M16.7 16.7l1.7 1.7M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-content">
+              <h3>AI Solutions</h3>
+              <p>Applied AI systems built on modern language and vision models.</p>
+              <ul class="capability-tags">
+                <li>LLM integration</li>
+                <li>Retrieval-augmented generation</li>
+                <li>Computer vision</li>
+              </ul>
+              <a class="service-link" href="#contact">Talk to us about this <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-row" id="svc-data-engineering">
+            <div class="service-visual">
+              <span class="service-dial" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 5h16l-5.5 7v6l-5 2v-8L4 5z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </div>
+            <div class="service-content">
+              <h3>Data Engineering</h3>
+              <p>The pipelines and infrastructure that make everything else possible.</p>
+              <ul class="capability-tags">
+                <li>ETL / ELT pipelines</li>
+                <li>Data warehousing</li>
+                <li>Workflow orchestration</li>
+              </ul>
+              <a class="service-link" href="#contact">Talk to us about this <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== SOLUTIONS ============================== -->
+    <section id="solutions" class="solutions">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Solutions</p>
+          <h2>Business problems, engineered solutions</h2>
+          <p>Every engagement starts with the problem, not the technology. Here's how each solution area breaks down.</p>
+        </div>
+
+        <div class="solutions-grid">
+
+          <article class="solution-card solution-card--span4">
+            <span class="solution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.5 17l5-6 4 3 7-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M15.5 6h4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3>Forecasting</h3>
+            <p class="solution-desc">Demand, energy, sales, resource, and time-series forecasting.</p>
+            <dl class="solution-flow">
+              <div><dt>Problem</dt><dd>Businesses often react to demand, energy use, or resource needs after the fact.</dd></div>
+              <div><dt>Approach</dt><dd>Time-series and machine learning models trained on historical and external signals.</dd></div>
+              <div><dt>Outcome</dt><dd>Forecasts your team can plan inventory, staffing, or capacity around.</dd></div>
+            </dl>
+          </article>
+
+          <article class="solution-card solution-card--span2">
+            <span class="solution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 3l7 3v5c0 4.6-3 8.2-7 10-4-1.8-7-5.4-7-10V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M12 8v5M12 15.5h.01" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Risk &amp; Anomaly Detection</h3>
+            <p class="solution-desc">Fraud, operational anomalies, and risk modeling.</p>
+            <dl class="solution-flow">
+              <div><dt>Problem</dt><dd>Fraud and operational anomalies are easy to miss in high-volume data.</dd></div>
+              <div><dt>Approach</dt><dd>Statistical and graph-based models that flag unusual patterns quickly.</dd></div>
+              <div><dt>Outcome</dt><dd>Fewer false positives, faster investigation, lower exposure.</dd></div>
+            </dl>
+          </article>
+
+          <article class="solution-card solution-card--span2">
+            <span class="solution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="8" cy="8" r="3.4" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M12.5 10.5l4 4M17 14v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <h3>Intelligent Automation</h3>
+            <p class="solution-desc">Automating analytical and repetitive workflows.</p>
+            <dl class="solution-flow">
+              <div><dt>Problem</dt><dd>Analysts spend hours on repetitive, rules-based data tasks.</dd></div>
+              <div><dt>Approach</dt><dd>Automating classification, extraction, and routing with ML-driven workflows.</dd></div>
+              <div><dt>Outcome</dt><dd>Hours returned to higher-value analysis every week.</dd></div>
+            </dl>
+          </article>
+
+          <article class="solution-card solution-card--span4">
+            <span class="solution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+              </svg>
+            </span>
+            <h3>Computer Vision</h3>
+            <p class="solution-desc">Image and video intelligence.</p>
+            <dl class="solution-flow">
+              <div><dt>Problem</dt><dd>Visual data — images, video, scans — holds information manual review can't scale to.</dd></div>
+              <div><dt>Approach</dt><dd>Vision models trained for detection, classification, and quality inspection.</dd></div>
+              <div><dt>Outcome</dt><dd>Consistent, automated visual analysis at production speed.</dd></div>
+            </dl>
+          </article>
+
+          <article class="solution-card solution-card--span3">
+            <span class="solution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3.5" y="4" width="17" height="14" rx="1.5" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M7 15v-4M12 15V9M17 15v-2.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>Business Intelligence</h3>
+            <p class="solution-desc">Turning operational data into actionable insights.</p>
+            <dl class="solution-flow">
+              <div><dt>Problem</dt><dd>Operational data sits in dashboards nobody has time to interpret.</dd></div>
+              <div><dt>Approach</dt><dd>Reporting layers that turn raw metrics into a clear, decision-ready narrative.</dd></div>
+              <div><dt>Outcome</dt><dd>Decisions grounded in what the data actually shows.</dd></div>
+            </dl>
+          </article>
+
+          <article class="solution-card solution-card--span3">
+            <span class="solution-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 4.5h9a2.5 2.5 0 012.5 2.5v12.5H7a2.5 2.5 0 01-2.5-2.5v-12z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M8 9h6M8 12.5h6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                <circle cx="17.5" cy="17.5" r="2.7" stroke="currentColor" stroke-width="1.4"/>
+                <path d="M19.4 19.4l1.6 1.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <h3>AI Knowledge Systems</h3>
+            <p class="solution-desc">RAG, document intelligence, and enterprise knowledge systems.</p>
+            <dl class="solution-flow">
+              <div><dt>Problem</dt><dd>Institutional knowledge is scattered across documents no one can search well.</dd></div>
+              <div><dt>Approach</dt><dd>Retrieval-augmented systems and document intelligence built on your own content.</dd></div>
+              <div><dt>Outcome</dt><dd>Answers grounded in your organization's actual documentation.</dd></div>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== TECHNOLOGY ============================== -->
+    <section id="technology" class="technology">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Technology</p>
+          <h2>The instruments behind the work</h2>
+          <p>No wall of logos — just the tools we actually reach for, organized by where they sit in the stack.</p>
+        </div>
+
+        <div class="tech-panel">
+          <div class="tech-panel__header">
+            <span class="mono">Technical Manifest</span>
+            <span class="mono tech-panel__count">6 categories</span>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-row__label">Programming</span>
+            <ul class="tech-tags">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>JavaScript / TypeScript</li>
+            </ul>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-row__label">Data Science</span>
+            <ul class="tech-tags">
+              <li>Pandas</li>
+              <li>NumPy</li>
+              <li>Scikit-learn</li>
+            </ul>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-row__label">Machine Learning</span>
+            <ul class="tech-tags">
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>XGBoost</li>
+            </ul>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-row__label">AI</span>
+            <ul class="tech-tags">
+              <li>Transformers</li>
+              <li>LLMs</li>
+              <li>NLP</li>
+              <li>Computer Vision</li>
+              <li>RAG</li>
+            </ul>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-row__label">Infrastructure</span>
+            <ul class="tech-tags">
+              <li>Docker</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>REST APIs</li>
+            </ul>
+          </div>
+
+          <div class="tech-row">
+            <span class="tech-row__label">MLOps</span>
+            <ul class="tech-tags">
+              <li>MLflow</li>
+              <li>DVC</li>
+              <li>CI/CD</li>
+              <li>Cloud</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROJECTS ============================== -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Projects</p>
+          <h2>Case files from the workbench</h2>
+          <p>Internal builds and research work that show how we approach real problems end to end.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <article class="case-file case-file--featured">
+            <div class="case-file__head">
+              <span class="case-tag">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 7l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                  <path d="M4 7v10l8 4 8-4V7" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                </svg>
+                Research Project
+              </span>
+              <h3>Predictive Energy Intelligence</h3>
+              <p class="case-file__summary">Forecasting energy consumption using machine learning and time-series methods.</p>
+            </div>
+            <dl class="case-flow">
+              <div><dt>Problem</dt><dd>Facilities teams often plan energy usage reactively, without visibility into near-term demand.</dd></div>
+              <div><dt>Approach</dt><dd>Time-series forecasting models trained on historical consumption and weather data.</dd></div>
+              <div><dt>Technology</dt><dd>Python, Pandas, XGBoost, time-series forecasting methods</dd></div>
+              <div><dt>Result</dt><dd>A forecasting pipeline that produces day-ahead consumption estimates for planning and load management.</dd></div>
+            </dl>
+          </article>
+
+          <article class="case-file">
+            <div class="case-file__head">
+              <span class="case-tag">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="5" y="3.5" width="14" height="17" rx="1.5" stroke="currentColor" stroke-width="1.4"/>
+                  <path d="M8.5 8h7M8.5 11.5h7M8.5 15h4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                Internal Case Study
+              </span>
+              <h3>Intelligent Document Assistant</h3>
+              <p class="case-file__summary">Document ingestion, chunking, embeddings, retrieval, and LLM responses.</p>
+            </div>
+            <dl class="case-flow">
+              <div><dt>Problem</dt><dd>Teams lose hours searching scattered PDFs and internal docs for specific answers.</dd></div>
+              <div><dt>Approach</dt><dd>Document ingestion &rarr; chunking &rarr; embeddings &rarr; retrieval &rarr; LLM responses grounded in source text.</dd></div>
+              <div><dt>Technology</dt><dd>Python, vector database, retrieval-augmented generation, LLM API</dd></div>
+              <div><dt>Result</dt><dd>A working assistant that answers questions directly from an internal document set, with source citations.</dd></div>
+            </dl>
+          </article>
+
+          <article class="case-file">
+            <div class="case-file__head">
+              <span class="case-tag">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 7l8-4 8 4-8 4-8-4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                  <path d="M4 7v10l8 4 8-4V7" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                </svg>
+                Research Project
+              </span>
+              <h3>Fraud &amp; Anomaly Detection</h3>
+              <p class="case-file__summary">ML and graph-based modeling for suspicious transaction detection.</p>
+            </div>
+            <dl class="case-flow">
+              <div><dt>Problem</dt><dd>Suspicious transactions can blend into normal activity, especially at scale.</dd></div>
+              <div><dt>Approach</dt><dd>Machine learning and graph-based modeling to flag transactions and relationships that deviate from expected patterns.</dd></div>
+              <div><dt>Technology</dt><dd>Python, Scikit-learn, graph analysis, anomaly scoring</dd></div>
+              <div><dt>Result</dt><dd>A detection pipeline that surfaces high-risk transactions for analyst review, reducing manual scanning.</dd></div>
+            </dl>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== PROCESS ============================== -->
+    <section id="process" class="process">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Process</p>
+          <h2>How a project moves through the shop</h2>
+          <p>Six stages, run in order, each one earning the next.</p>
+        </div>
+
+        <div class="process-rail">
+          <div class="process-step process-step--up">
+            <div class="process-step__card">
+              <h3>Understand</h3>
+              <p>Frame the business problem and success criteria before touching a model.</p>
+            </div>
+            <span class="process-step__node">01</span>
+          </div>
+
+          <div class="process-step process-step--down">
+            <span class="process-step__node">02</span>
+            <div class="process-step__card">
+              <h3>Explore</h3>
+              <p>Dig into the data — quality, gaps, and distributions — and what it can and can't tell us.</p>
+            </div>
+          </div>
+
+          <div class="process-step process-step--up">
+            <div class="process-step__card">
+              <h3>Model</h3>
+              <p>Test and validate modeling approaches against real evaluation criteria.</p>
+            </div>
+            <span class="process-step__node">03</span>
+          </div>
+
+          <div class="process-step process-step--down">
+            <span class="process-step__node">04</span>
+            <div class="process-step__card">
+              <h3>Engineer</h3>
+              <p>Turn a working model into a maintainable, tested pipeline.</p>
+            </div>
+          </div>
+
+          <div class="process-step process-step--up">
+            <div class="process-step__card">
+              <h3>Deploy</h3>
+              <p>Ship the system into production, integrated with real workflows.</p>
+            </div>
+            <span class="process-step__node">05</span>
+          </div>
+
+          <div class="process-step process-step--down">
+            <span class="process-step__node">06</span>
+            <div class="process-step__card">
+              <h3>Improve</h3>
+              <p>Monitor performance and refine as data and business needs shift.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== INSIGHTS ============================== -->
+    <section id="insights" class="insights">
+      <div class="container">
+        <div class="section-header">
+          <p class="eyebrow">Insights</p>
+          <h2>Notes from the workbench</h2>
+          <p>Practical writing on data, models, and the systems that keep them running.</p>
+        </div>
+
+        <article class="insight-card insight-card--featured">
+          <span class="insight-category mono">Data Science</span>
+          <h3>Data Cleaning and Reliable Machine Learning</h3>
+          <p>
+            Most model failures trace back to the data, not the algorithm. This piece
+            walks through the checks worth automating before training starts: missing-value
+            patterns, label leakage, distribution drift between train and production, and
+            duplicate or near-duplicate records.
+          </p>
+          <div class="insight-meta mono">
+            <span>Add publish date</span>
+            <span aria-hidden="true">&middot;</span>
+            <span>6 min read</span>
+          </div>
+          <a class="service-link" href="#insights">Read article <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <div class="insights-columns">
+
+          <article class="insight-card">
+            <span class="insight-category mono">Data Science</span>
+            <h3>ML vs. Traditional Time-Series Forecasting</h3>
+            <p>
+              Classical methods like ARIMA and exponential smoothing still outperform
+              machine learning on plenty of forecasting problems. We break down when a
+              gradient-boosted or deep learning model actually earns its added complexity
+              — and when it doesn't.
+            </p>
+            <div class="insight-meta mono">
+              <span>Add publish date</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>7 min read</span>
+            </div>
+            <a class="service-link" href="#insights">Read article <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-category mono">MLOps</span>
+            <h3>Production-Ready Machine Learning</h3>
+            <p>
+              A model that scores well in a notebook is not the same as a model that
+              survives contact with production traffic. A practical checklist covering
+              versioning, monitoring, rollback plans, and the tests that catch silent
+              failures before users do.
+            </p>
+            <div class="insight-meta mono">
+              <span>Add publish date</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>8 min read</span>
+            </div>
+            <a class="service-link" href="#insights">Read article <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-category mono">Analytics</span>
+            <h3>From Dashboards to Decision Intelligence</h3>
+            <p>
+              Most dashboards get built, viewed twice, and forgotten. A look at what
+              separates a dashboard from a decision, and how to design reporting layers
+              people actually act on instead of just glancing at.
+            </p>
+            <div class="insight-meta mono">
+              <span>Add publish date</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>5 min read</span>
+            </div>
+            <a class="service-link" href="#insights">Read article <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-category mono">AI</span>
+            <h3>RAG Systems and Enterprise Knowledge</h3>
+            <p>
+              Retrieval-augmented generation sounds simple until you try to make it
+              accurate over a real document set. A look at chunking strategy, retrieval
+              quality, and why most RAG systems fail at the retrieval step, not the
+              generation step.
+            </p>
+            <div class="insight-meta mono">
+              <span>Add publish date</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>7 min read</span>
+            </div>
+            <a class="service-link" href="#insights">Read article <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+          <article class="insight-card">
+            <span class="insight-category mono">Machine Learning</span>
+            <h3>Why Accuracy Isn't the Only ML Metric</h3>
+            <p>
+              A 95%-accurate fraud model can still be useless if the 5% it misses is
+              where all the cost lives. A practical case for choosing evaluation metrics
+              that reflect what a wrong prediction actually costs.
+            </p>
+            <div class="insight-meta mono">
+              <span>Add publish date</span>
+              <span aria-hidden="true">&middot;</span>
+              <span>6 min read</span>
+            </div>
+            <a class="service-link" href="#insights">Read article <span aria-hidden="true">&rarr;</span></a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== CONTACT ============================== -->
+    <section id="contact" class="contact">
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's build something intelligent.</h2>
+          <p>
+            Tell us what you're working on. Whether it's a well-defined project or
+            just a data problem you know needs solving, we're happy to talk it through.
+          </p>
+          <a class="contact-email mono" href="mailto:contact.hr@pixorbital.in">contact.hr@pixorbital.in</a>
+        </div>
+
+        <div class="contact-panel">
+          <div class="contact-panel__header">
+            <span class="mono">Project Inquiry</span>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+
+            <div class="form-field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required aria-describedby="cf-name-error" />
+              <span class="form-error" id="cf-name-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-email">Work email</label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" required aria-describedby="cf-email-error" />
+              <span class="form-error" id="cf-email-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-company">Company</label>
+              <input type="text" id="cf-company" name="company" autocomplete="organization" required aria-describedby="cf-company-error" />
+              <span class="form-error" id="cf-company-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-interest">Area of interest</label>
+              <select id="cf-interest" name="interest" required aria-describedby="cf-interest-error">
+                <option value="" selected disabled>Select an area</option>
+                <option value="Data Science & Analytics">Data Science &amp; Analytics</option>
+                <option value="Machine Learning">Machine Learning</option>
+                <option value="Predictive Analytics">Predictive Analytics</option>
+                <option value="AI Solutions">AI Solutions</option>
+                <option value="Data Engineering">Data Engineering</option>
+                <option value="Other">Other</option>
+              </select>
+              <span class="form-error" id="cf-interest-error" role="alert"></span>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-details">Project details</label>
+              <textarea id="cf-details" name="details" rows="5" required aria-describedby="cf-details-error"></textarea>
+              <span class="form-error" id="cf-details-error" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">Send message</button>
+
+            <p class="form-success" id="form-success" role="status" hidden>
+              Thanks — your email client should now be open with your message ready to send.
+            </p>
+            <p class="form-note">
+              This form opens a pre-filled email in your mail client — nothing is sent to a server.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================== FOOTER ============================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <span class="brand">
+          <img src="images/logo.svg" alt="" width="28" height="28" />
+          PixOrbital
+        </span>
+        <p class="footer-desc">
+          PixOrbital designs and builds machine learning, AI, and data engineering
+          systems that turn data into decisions.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#technology">Technology</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#insights">Insights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="#svc-data-science">Data Science &amp; Analytics</a></li>
+          <li><a href="#svc-machine-learning">Machine Learning</a></li>
+          <li><a href="#svc-predictive-analytics">Predictive Analytics</a></li>
+          <li><a href="#svc-ai-solutions">AI Solutions</a></li>
+          <li><a href="#svc-data-engineering">Data Engineering</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="mailto:contact.hr@pixorbital.in">contact.hr@pixorbital.in</a></li>
+          <li><a href="#contact">Start a project</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span class="copyright">&copy; <span id="footer-year"></span> PixOrbital. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M12 19V5M12 5l-6 6M12 5l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
