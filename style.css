@@ -9,37 +9,37 @@
    1. Design tokens
    -------------------------------------------------------------------------- */
 :root {
-  /* Colors */
-  --color-brass: #B5A642;
-  --color-brass-light: #D9C87A;
-  --color-brass-dark: #8A7C2E;
-  --color-mahogany: #5C0000;
-  --color-mahogany-light: #7A1A1A;
-  --color-sepia: #704214;
-  --color-parchment: #F5DEB3;
-  --color-copper: #B87333;
-  --color-copper-text: #8A5626; /* darker copper — meets WCAG AA (4.5:1) for text on parchment/ivory */
-  --color-teal: #008080;
-  --color-teal-dark: #005f5f;
-  --color-clockwork-orange: #B45A00; /* darkened from #D46A00 — ivory button text now meets WCAG AA (4.7:1) */
-  --color-ivory: #FFFFF0;
+  /* Colors — De Stijl: primary red/blue/yellow + black/white/grey, flat only */
+  --color-brass: #CC0000;               /* was ornamental brass; now a mid-strength decorative red */
+  --color-brass-light: #FFFF00;          /* was light brass; now yellow — used on dark (black) surfaces */
+  --color-brass-dark: #990000;
+  --color-mahogany: #111111;             /* was mahogany ink; now near-black (never pure #000 per spec) */
+  --color-mahogany-light: #333333;
+  --color-sepia: #333333;                /* was warm brown; now dark grey for secondary text */
+  --color-parchment: #FFFFFF;            /* was parchment tan; now flat white */
+  --color-copper: #0000FF;               /* was copper; now primary blue accent */
+  --color-copper-text: #0000FF;          /* pure blue already meets WCAG AA (8.6:1) on white — no separate darken needed */
+  --color-teal: #0000FF;                 /* was teal; now blue, unifying all accent usage */
+  --color-teal-dark: #0000FF;
+  --color-clockwork-orange: #CC0000;     /* was CTA orange; now AA-safe red (#FF0000 fails white-text AA — darkened, matches Don'ts' 80% saturation cap) */
+  --color-ivory: #FFFFFF;
 
   /* Semantic aliases */
   --color-bg: var(--color-parchment);
   --color-surface: var(--color-ivory);
-  --color-surface-raised: #FBF6E8;
-  --color-text: #2A1B10;        /* off-black, warm charcoal-brown — never pure black */
-  --color-text-muted: #5A4A38;
-  --color-border: rgba(92, 0, 0, 0.18);
-  --color-border-strong: var(--color-copper);
+  --color-surface-raised: #F2F2F2;
+  --color-text: #111111;                 /* off-black per Don'ts ("no pure black") */
+  --color-text-muted: #595959;           /* AA-safe grey for body-sized muted text (design.md's #808080 fails AA at text size, reserved for borders instead) */
+  --color-border: rgba(17, 17, 17, 0.2);
+  --color-border-strong: var(--color-mahogany); /* bold black lines, not colored — the De Stijl signature */
   --color-accent: var(--color-teal);
   --color-cta: var(--color-clockwork-orange);
-  --color-error: #A6320D;
+  --color-error: #B00020;
   --color-success: #2F6B3A;
 
-  /* Typography */
-  --font-display: "IM Fell English", Georgia, "Times New Roman", serif;
-  --font-body: "IM Fell English", Georgia, "Times New Roman", serif;
+  /* Typography — Helvetica is a system font, no web-font load needed */
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
 
   --fs-hero: clamp(2.5rem, 5vw, 4rem);
@@ -51,7 +51,7 @@
   --lh-body: 1.6;
   --measure: 72ch;
 
-  /* Spacing (8px base unit) */
+  /* Spacing (8px base unit) — unchanged; design.md specifies the same rhythm */
   --space-unit: 0.5rem;
   --space-1: 0.5rem;   /* 8px  */
   --space-2: 1rem;     /* 16px */
@@ -62,27 +62,27 @@
   --space-8: 6rem;     /* 96px */
   --section-gap: clamp(4rem, 8vw, 8rem);
 
-  /* Layout */
+  /* Layout — unchanged; design.md specifies the same container/grid rules */
   --container-max: 1280px;
   --container-pad: 1.5rem;
 
-  /* Shape */
-  --radius-sm: 0.5rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
+  /* Shape — sharp corners throughout, per De Stijl's explicit "no curves" rule */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 
-  /* Elevation */
-  --shadow-sm: 0 2px 12px rgba(42, 27, 16, 0.08);
-  --shadow-md: 0 8px 24px rgba(42, 27, 16, 0.14);
-  --shadow-lift: 0 12px 28px rgba(42, 27, 16, 0.18);
+  /* Elevation — capped per Don'ts: "No shadows heavier than 0 2px 8px rgba(0,0,0,0.08)" */
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lift: 0 2px 8px rgba(0, 0, 0, 0.08);
 
-  /* Motion */
-  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  /* Motion — ease-out only, no spring/overshoot ("smooth and predictable" per spec) */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
   --dur-fast: 200ms;
-  --dur-entry: 480ms;
+  --dur-entry: 420ms;
 
-  /* z-index contract */
+  /* z-index contract — unchanged; design.md specifies the same contract */
   --z-base: 0;
   --z-sticky-nav: 100;
   --z-overlay: 200;
@@ -146,7 +146,7 @@ p { text-wrap: pretty; }
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 2px;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -233,7 +233,7 @@ section {
 }
 
 .btn-primary:hover {
-  background: #9F4F00; /* ~8% darken of new clockwork-orange base */
+  background: #A30000; /* ~8% darken of new clockwork-orange base */
   box-shadow: var(--shadow-md);
   transform: translateY(-1px);
 }
@@ -245,7 +245,7 @@ section {
 }
 
 .btn-secondary:hover {
-  background: rgba(92, 0, 0, 0.06);
+  background: rgba(17, 17, 17, 0.06);
 }
 
 /* --------------------------------------------------------------------------
@@ -498,24 +498,6 @@ section {
   background: var(--color-surface);
 }
 
-/* Gear rotation — transform-only, purposeful mechanical motion */
-.gear { transform-box: fill-box; transform-origin: center; }
-.gear-a { animation: spin-cw 26s linear infinite; }
-.gear-b { animation: spin-ccw 18s linear infinite; }
-.gear-c { animation: spin-cw 14s linear infinite; }
-
-@keyframes spin-cw { to { transform: rotate(360deg); } }
-@keyframes spin-ccw { to { transform: rotate(-360deg); } }
-
-.orbit-dot { animation: orbit-pulse 3.2s ease-in-out infinite; }
-.orbit-dot--delay1 { animation-delay: 1.05s; }
-.orbit-dot--delay2 { animation-delay: 2.1s; }
-
-@keyframes orbit-pulse {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 1; }
-}
-
 @media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -558,15 +540,6 @@ section {
   padding: var(--space-4);
   position: relative;
   box-shadow: var(--shadow-sm);
-}
-
-.about-plate::before {
-  content: "";
-  position: absolute;
-  inset: 8px;
-  border: 1px dashed var(--color-border);
-  border-radius: calc(var(--radius-lg) - 4px);
-  pointer-events: none;
 }
 
 .about-plate__eyebrow {
@@ -638,7 +611,7 @@ section {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(181, 166, 66, 0.14);
+  background: rgba(0, 0, 255, 0.08);
   color: var(--color-copper-text);
 }
 
@@ -703,10 +676,10 @@ section {
   justify-content: center;
   width: 128px;
   height: 128px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--color-surface);
   border: 3px solid var(--color-copper);
-  box-shadow: inset 0 0 0 6px rgba(181, 166, 66, 0.12), var(--shadow-sm);
+  box-shadow: var(--shadow-sm);
   color: var(--color-mahogany);
 }
 
@@ -733,7 +706,7 @@ section {
   letter-spacing: 0.02em;
   color: var(--color-sepia);
   border: 1px solid var(--color-border);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 0.35rem 0.85rem;
   background: var(--color-surface-raised);
 }
@@ -805,7 +778,7 @@ section {
   width: 44px;
   height: 44px;
   border-radius: var(--radius-sm);
-  background: rgba(0, 128, 128, 0.12);
+  background: rgba(0, 0, 255, 0.08);
   color: var(--color-teal-dark);
 }
 
@@ -828,7 +801,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  border-top: 1px dashed var(--color-border);
+  border-top: 2px solid var(--color-mahogany);
   padding-top: var(--space-3);
 }
 
@@ -880,7 +853,7 @@ section {
   text-transform: uppercase;
 }
 
-.tech-panel__count { color: rgba(245, 222, 179, 0.65); }
+.tech-panel__count { color: rgba(255, 255, 255, 0.65); }
 
 .tech-row {
   display: flex;
@@ -888,7 +861,7 @@ section {
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-3) var(--space-4);
-  border-top: 1px dashed var(--color-border);
+  border-top: 2px solid var(--color-mahogany);
 }
 
 .tech-row:nth-child(even) { background: var(--color-surface-raised); }
@@ -961,7 +934,7 @@ section {
   text-transform: uppercase;
   color: var(--color-copper-text);
   border: 1px solid var(--color-border);
-  border-radius: 999px;
+  border-radius: 0;
   padding: 0.3rem 0.75rem 0.3rem 0.6rem;
   background: var(--color-surface-raised);
 }
@@ -992,7 +965,7 @@ section {
 }
 
 .case-file:not(.case-file--featured) .case-flow {
-  border-top: 1px dashed var(--color-border);
+  border-top: 2px solid var(--color-mahogany);
   padding-top: var(--space-3);
 }
 
@@ -1034,14 +1007,8 @@ section {
   top: 50%;
   left: 0;
   right: 0;
-  height: 2px;
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--color-copper) 0,
-    var(--color-copper) 10px,
-    transparent 10px,
-    transparent 20px
-  );
+  height: 3px;
+  background: var(--color-mahogany);
   transform: translateY(-50%);
   z-index: 0;
 }
@@ -1063,15 +1030,23 @@ section {
   justify-content: center;
   width: 56px;
   height: 56px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, var(--color-brass-light), var(--color-brass) 55%, var(--color-brass-dark) 100%);
-  border: 2px solid var(--color-mahogany);
+  border-radius: 0;
+  background: var(--color-surface);
+  border: 3px solid var(--color-mahogany);
   color: var(--color-mahogany);
   font-family: var(--font-mono);
   font-weight: 600;
   font-size: 0.9375rem;
   box-shadow: var(--shadow-sm);
 }
+
+/* De Stijl: cycle the six nodes through the primary palette — blocks of primary colors */
+.process-step:nth-of-type(6n+1) .process-step__node,
+.process-step:nth-of-type(6n+4) .process-step__node { background: var(--color-brass); color: var(--color-ivory); }
+.process-step:nth-of-type(6n+2) .process-step__node,
+.process-step:nth-of-type(6n+5) .process-step__node { background: var(--color-copper); color: var(--color-ivory); }
+.process-step:nth-of-type(6n+3) .process-step__node,
+.process-step:nth-of-type(6n) .process-step__node { background: var(--color-brass-light); color: var(--color-mahogany); }
 
 .process-step__card {
   position: absolute;
@@ -1107,15 +1082,9 @@ section {
     bottom: 0;
     left: 27px;
     right: auto;
-    width: 2px;
+    width: 3px;
     height: auto;
-    background-image: repeating-linear-gradient(
-      to bottom,
-      var(--color-copper) 0,
-      var(--color-copper) 10px,
-      transparent 10px,
-      transparent 20px
-    );
+    background: var(--color-mahogany);
     transform: none;
   }
 
@@ -1165,8 +1134,8 @@ section {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: var(--color-teal-dark);
-  background: rgba(0, 128, 128, 0.1);
-  border-radius: 999px;
+  background: rgba(0, 0, 255, 0.08);
+  border-radius: 0;
   padding: 0.3rem 0.7rem;
 }
 
@@ -1365,7 +1334,7 @@ section {
 .footer-brand .brand { margin-bottom: var(--space-2); color: var(--color-parchment); }
 
 .footer-desc {
-  color: rgba(245, 222, 179, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 0.9375rem;
   max-width: 34ch;
 }
@@ -1382,7 +1351,7 @@ section {
 .footer-col ul { display: flex; flex-direction: column; gap: 0.55rem; }
 
 .footer-col a {
-  color: rgba(245, 222, 179, 0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.9375rem;
   transition: color var(--dur-fast) var(--ease-standard);
 }
@@ -1392,13 +1361,13 @@ section {
 .footer-bottom {
   margin-top: var(--space-5);
   padding-top: var(--space-3);
-  border-top: 1px solid rgba(245, 222, 179, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .site-footer .copyright {
   font-family: var(--font-mono);
   font-size: var(--fs-small);
-  color: rgba(245, 222, 179, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media (max-width: 900px) {
@@ -1453,10 +1422,10 @@ section {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, var(--color-brass-light), var(--color-brass) 55%, var(--color-brass-dark) 100%);
-  border: 2px solid var(--color-mahogany);
-  color: var(--color-mahogany);
+  border-radius: 0;
+  background: var(--color-cta);
+  border: 3px solid var(--color-mahogany);
+  color: var(--color-ivory);
   box-shadow: var(--shadow-md);
   opacity: 0;
   visibility: hidden;
